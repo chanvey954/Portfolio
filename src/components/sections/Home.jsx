@@ -1,5 +1,4 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-
 export const Home = () => {
   return (
     <section
@@ -39,7 +38,7 @@ export const Home = () => {
           {/* Right side - image */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="src/assets/profile.png" // put your image in public folder
+              src={`${process.env.PUBLIC_URL}/images/profile.png`}
               alt="Ien Chanvey"
               className="w-72 md:w-96 rounded-2xl shadow-lg"
             />
